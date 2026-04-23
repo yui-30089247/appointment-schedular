@@ -12,10 +12,11 @@ using namespace std;
 
 class Time {
     private:
-        string startTime;
+        string startTime; // hh:mm
         string endTime;
     public:
         Time();
+        Time(string start, string end);
         string getStartTime() const;
         string getEndTime() const;
         void setStartTime(string sTime);

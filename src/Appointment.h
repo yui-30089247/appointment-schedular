@@ -17,9 +17,13 @@ class Appointment {
     private:
         vector<Appointment> appointments;
     public:
-        Appointment getAppointments() const;
+        Appointment();
+        Appointment(Date date, Time time, Location location, Memo memo);
+        vector<Appointment> getAppointments() const;
         void addAppointment(Appointment appointment);
+        void deleteAppointment(Appointment appointment);
         void displayAppointments(); 
+
 };
 
 #endif

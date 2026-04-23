@@ -16,6 +16,8 @@ class Location {
         string address;
 
     public:
+        Location();
+        Location(string name, string address);
         string getName() const;
         string getAddress() const;
         void setName();

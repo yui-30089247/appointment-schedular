@@ -12,9 +12,10 @@ using namespace std;
 
 class Date {
     private:
-        string date; // here, I set the date type to string, but it might change after more planning
+        string date; // here, I set the date type to string (MM/DD/YY), but it might change after more planning
     public:
         Date();
+        Date(string d);
         string getDate() const;
         void setDate(string date);
 };
