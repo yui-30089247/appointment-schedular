@@ -4,27 +4,45 @@
 using namespace std;
 
 Appointment::Appointment() {
-    this->appointments = {};
+
 };
 
 Appointment::Appointment(Date date, Time time, Location location, Memo memo) {
     // may not need this contructor
 };
 
-vector<Appointment> Appointment::getAppointments() const {
-    return this->appointments;
+string Appointment::getName() const {
+    return this->name;
 };
 
-void Appointment::addAppointment(Appointment appointment) {
-    this->appointments.push_back(appointment);
+Date Appointment::getDate() const {
+    return this->date;
 };
 
-void Appointment::deleteAppointment(Appointment appointment) {
-    // TODO: delete the appointment from the vector
-    cout << "Not implemented yet" << endl;
+Location Appointment::getLocation() const {
+    return this->location;
 };
 
-void Appointment::displayAppointments() {
-    // TODO: iterate through the appointments and display with the appointment information
-    cout << "Not implemented yet" << endl;
-}; 
+Time Appointment::getTime() const {
+    return this->time;
+};
+
+Memo Appointment::getMemo() const {
+    return this->memo;
+};
+
+void Appointment::setName(string name) {
+    this->name = name;
+};
+
+void Appointment::setDate(Date date) {
+    this->date = date;
+};
+
+void Appointment::setTime(Time time) {
+    this->time = time;
+};
+
+void Appointment::setMemo(Memo memo) {
+    this->memo = memo;
+};

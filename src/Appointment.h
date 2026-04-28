@@ -15,15 +15,24 @@
 
 class Appointment {
     private:
-        vector<Appointment> appointments;
+        string name;
+        Date date;
+        Location location;
+        Time time;
+        Memo memo;
+
     public:
         Appointment();
         Appointment(Date date, Time time, Location location, Memo memo);
-        vector<Appointment> getAppointments() const;
-        void addAppointment(Appointment appointment);
-        void deleteAppointment(Appointment appointment);
-        void displayAppointments(); 
-
+        string getName() const;
+        Date getDate() const;
+        Location getLocation() const;
+        Time getTime() const;
+        Memo getMemo() const;
+        void setName(string name);
+        void setDate(Date date);
+        void setTime(Time time);
+        void setMemo(Memo memo);
 };
 
 #endif
