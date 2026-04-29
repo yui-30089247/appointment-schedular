@@ -13,7 +13,7 @@ class AppointmentManager {
         vector<Appointment> getAppointments() const;
         void addAppointment(Appointment appointment);
         void deleteAppointment(Appointment appointment);
-        void displayAppointments(); 
+        void displayAppointments() const; 
         void editAppointment(Appointment appointment);
 };
 

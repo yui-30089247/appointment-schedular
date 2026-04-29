@@ -13,11 +13,21 @@ vector<Appointment> AppointmentManager::getAppointments() const {
 };
 
 void AppointmentManager::addAppointment(Appointment appointment) {
-    cout << "Not implemented yet" << endl;
+    this->appointments.push_back(appointment);
 };
 
-void AppointmentManager::displayAppointments() {
-    cout << "Not implemented yet" << endl;
+void AppointmentManager::displayAppointments() const {
+    cout << "----- Appointments -----" << endl;
+
+    for (int i = 0; i < this->appointments.size(); i++) {
+        Appointment app = this->appointments[i];
+        cout << "Appointment " << (i + 1) << ": " << endl;
+        cout << "Date: " << app.getDate().getDate() << endl;
+        cout << "Time: " << app.getTime().getStartTime() << " - " << app.getTime().getEndTime() << endl;
+        cout << "Location: " << app.getLocation().getName() << " - " << app.getLocation().getAddress() << endl;
+        cout << "Memo: " << app.getMemo().getMemo();
+        cout << "--------------------" << endl;
+    }
 }; 
 
 void AppointmentManager::deleteAppointment(Appointment appointment) {
