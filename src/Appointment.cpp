@@ -7,12 +7,16 @@ Appointment::Appointment() {
 
 };
 
-Appointment::Appointment(Date date, Time time, Location location, Memo memo) {
-    // may not need this contructor
+Appointment::Appointment(string title, Date date, Time time, Location location, Memo memo) {
+    this->title = title;
+    this->date = date;
+    this->time = time;
+    this->location = location;
+    this->memo = memo;
 };
 
-string Appointment::getName() const {
-    return this->name;
+string Appointment::getTitle() const {
+    return this->title;
 };
 
 Date Appointment::getDate() const {
@@ -31,8 +35,8 @@ Memo Appointment::getMemo() const {
     return this->memo;
 };
 
-void Appointment::setName(string name) {
-    this->name = name;
+void Appointment::setTitle(string title) {
+    this->title = title;
 };
 
 void Appointment::setDate(Date date) {

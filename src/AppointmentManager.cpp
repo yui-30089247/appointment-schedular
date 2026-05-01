@@ -5,7 +5,7 @@
 using namespace std;
 
 AppointmentManager::AppointmentManager() {
-
+    this->appointments = {};
 };
 
 vector<Appointment> AppointmentManager::getAppointments() const {
