@@ -33,6 +33,7 @@ class Appointment {
         void setDate(Date date);
         void setTime(Time time);
         void setMemo(Memo memo);
+        void setLocation(Location location);
 };
 
 #endif

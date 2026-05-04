@@ -30,22 +30,13 @@ int Date::getDay() const {
 };
 
 void Date::setYear(int y) {
-    if (y < 1990) {
-        throw invalid_argument("Invalid year");
-    }
     this->year = y;
 };
 
 void Date::setMonth(int m) {
-    if (m < 1 || m > 12) {
-        throw invalid_argument("Invalid month");
-    }
     this->month = m;
 };
 
 void Date::setDay(int d) {
-    if (d < 1 || d > 31) {
-        throw invalid_argument("Invalid day");
-    }
     this->day = d;
 };

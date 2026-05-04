@@ -4,7 +4,6 @@
 using namespace std;
 
 Appointment::Appointment() {
-
 };
 
 Appointment::Appointment(string title, Date date, Time time, Location location, Memo memo) {
@@ -40,6 +39,15 @@ void Appointment::setTitle(string title) {
 };
 
 void Appointment::setDate(Date date) {
+    if (date.getYear() < 1990) {
+        throw invalid_argument("Invalid year");
+    }
+    if (date.getMonth() < 1 || date.getMonth() > 12) {
+        throw invalid_argument("Invalid month");
+    }
+    if (date.getDay() < 1 || date.getDay() > 31) {
+        throw invalid_argument("Invalid day");
+    }
     this->date = date;
 };
 
@@ -50,3 +58,7 @@ void Appointment::setTime(Time time) {
 void Appointment::setMemo(Memo memo) {
     this->memo = memo;
 };
+
+void Appointment::setLocation(Location location) {
+    this->location = location;
+}

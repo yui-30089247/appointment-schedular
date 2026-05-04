@@ -23,7 +23,7 @@ add_executable(appointment_scheduler src/main.cpp)
 target_link_libraries(appointment_scheduler appointment_logic)
 
 # Create test executable
-add_executable(tests tests/test_main.cpp)
+add_executable(tests ../tests/test_main.cpp)
 target_link_libraries(tests appointment_logic)
 
 # Register tests with CTest
