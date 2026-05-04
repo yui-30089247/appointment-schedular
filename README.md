@@ -1,4 +1,4 @@
-# Appointment Schedular
+# Appointment scheduler
 This program allows users to view, add, delete and edit appointments on a calendar.
 
 ## Features
@@ -16,7 +16,7 @@ cmake --build build
 
 ## Running
 ```
-./build/appointment-schedular
+./build/appointment-scheduler
 ```
 
 ## Running Tests
@@ -26,6 +26,20 @@ ctest --test-dir build --verbose
 
 ## Author
 Yui Dayal - CIS 25 Final Project
+
+## Current Status
+ 
+**Implemented Features**:
+- Feature 1: Add a new appointment
+ 
+**Stubbed (compile but not implemented)**:
+- Feature 2: Search appointment
+- Feature 3: View appointment by specific category (date, time, location)
+- Feature 4: Edit appointment
+- Feature 5: Delete appointment
+ 
+**Known Issues**:
+
 
 
 

@@ -20,7 +20,7 @@ class Location {
         Location(string name, string address);
         string getName() const;
         string getAddress() const;
-        void setName();
-        void setAddress();
+        void setName(string name);
+        void setAddress(string address);
 };
  #endif

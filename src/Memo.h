@@ -16,8 +16,8 @@ class Memo {
     public:
         Memo();
         Memo(string desc);
-        string getMemo() const;
-        void setMemo();
+        string getDesciption() const;
+        void setDescription(string description);
     
 };
 
