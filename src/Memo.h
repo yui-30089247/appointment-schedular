@@ -17,7 +17,7 @@ class Memo {
         Memo();
         Memo(string desc);
         string getDesciption() const;
-        void setMemo(string memo);
+        void setDescription(string description);
     
 };
 

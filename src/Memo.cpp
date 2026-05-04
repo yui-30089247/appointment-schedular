@@ -12,6 +12,6 @@ string Memo::getDesciption() const {
     return this->description;
 };
 
-void Memo::setMemo(string desc) {
+void Memo::setDescription(string desc) {
     this->description = desc;
 };

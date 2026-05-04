@@ -20,8 +20,13 @@ class Date {
         Date();
         // Date(string d);
         Date(int y, int m, int d);
-        string getDate() const;
-        void setDate(int y, int m, int d);
+        int getYear() const;
+        int getMonth() const;
+        int getDay() const;
+        void setYear(int y);
+        void setMonth(int m);
+        void setDay(int d);
+        // void setDate(int y, int m, int d);
 };
 
 #endif

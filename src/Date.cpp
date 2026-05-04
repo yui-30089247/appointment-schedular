@@ -17,24 +17,35 @@ Date::Date(int y, int m, int d) {
     this->day = d;
 };
 
-string Date::getDate() const {
-    return to_string(this->year) + to_string(this->month) + to_string(this->day);
+int Date::getYear() const {
+    return this->year;
 };
 
-void Date::setDate(int y, int m, int d) {
-    /**
-     * TODO: I want to allow users to set future appointments. 
-     * If the specified date is before current date, I want to throw an error
-     */
+int Date::getMonth() const {
+    return this->month;
+};
+
+int Date::getDay() const {
+    return this->day;
+};
+
+void Date::setYear(int y) {
     if (y < 1990) {
         throw invalid_argument("Invalid year");
-    } else if (m < 1 || m > 12) {
-        throw invalid_argument("Invalid year");
-    } else if (d < 1 || d > 31) {
-        throw invalid_argument("Invalid year");
-    } else {
-        this->year = y;
-        this->month = m;
-        this->day = d;
     }
+    this->year = y;
+};
+
+void Date::setMonth(int m) {
+    if (m < 1 || m > 12) {
+        throw invalid_argument("Invalid month");
+    }
+    this->month = m;
+};
+
+void Date::setDay(int d) {
+    if (d < 1 || d > 31) {
+        throw invalid_argument("Invalid day");
+    }
+    this->day = d;
 };

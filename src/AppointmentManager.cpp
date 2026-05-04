@@ -23,7 +23,8 @@ void AppointmentManager::displayAppointments() const {
     for (int i = 0; i < this->appointments.size(); i++) {
         Appointment app = this->appointments[i];
         cout << "Appointment " << (i + 1) << ": " << endl;
-        cout << "Date: " << app.getDate().getDate() << endl;
+        // cout << "Date: " << app.getDate().getDay() << endl;
+        cout << "Date: " << app.getDate().getYear() << "/" << app.getDate().getMonth() << "/" << app.getDate().getDay() << endl;
         cout << "Time: " << app.getTime().getStartTime() << " - " << app.getTime().getEndTime() << endl;
         cout << "Location: " << app.getLocation().getName() << " - " << app.getLocation().getAddress() << endl;
         cout << "Memo: " << app.getMemo().getDesciption();
@@ -56,4 +57,8 @@ void AppointmentManager::displayMenu() {
     cout << "Enter 3 for Delete Appointment" << endl;
     cout << "Enter 4 for Edit Appointment" << endl;
     cout << "Enter 5 for Exit" << endl;
+}
+
+int AppointmentManager::getNumAppointments() const {
+    return this->appointments.size();
 }
