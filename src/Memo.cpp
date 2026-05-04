@@ -8,7 +8,7 @@ Memo::Memo(string desc) {
     this->description = desc;
 };
 
-string Memo::getMemo() const {
+string Memo::getDesciption() const {
     return this->description;
 };
 

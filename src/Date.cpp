@@ -8,17 +8,17 @@ using namespace std;
 Date::Date() {
     this->year = 1990;
     this->month = 1;
-    this->date = 1;
+    this->day = 1;
 };
 
 Date::Date(int y, int m, int d) {
     this->year = y;
     this->month = m;
-    this->date = d;
+    this->day = d;
 };
 
 string Date::getDate() const {
-    return to_string(this->year) + to_string(this->month) + to_string(this->date);
+    return to_string(this->year) + to_string(this->month) + to_string(this->day);
 };
 
 void Date::setDate(int y, int m, int d) {
@@ -35,6 +35,6 @@ void Date::setDate(int y, int m, int d) {
     } else {
         this->year = y;
         this->month = m;
-        this->date = d;
+        this->day = d;
     }
 };

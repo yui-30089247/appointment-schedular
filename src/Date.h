@@ -15,7 +15,7 @@ class Date {
         // string date; // here, I set the date type to string (MM/DD/YY), but it might change after more planning
         int year;
         int month;
-        int date;
+        int day;
     public:
         Date();
         // Date(string d);

@@ -15,6 +15,7 @@ class AppointmentManager {
         void deleteAppointment(Appointment appointment);
         void displayAppointments() const; 
         void editAppointment(Appointment appointment);
+        void static displayMenu();
 };
 
 #endif
