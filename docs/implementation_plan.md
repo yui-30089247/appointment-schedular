@@ -1,6 +1,6 @@
 # Implementation Plan
 
-## Feature 1: Create New Appointment
+## Feature 1: Add New Appointment
 **Trigger**: User selects "Create new appointment" from main menu. 
 Prompts user for an appointment date, time, location and memo. 
 Create an Appointment object and adds it to the Appointment array (vector).
