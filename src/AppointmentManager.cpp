@@ -17,13 +17,11 @@ void AppointmentManager::addAppointment(Appointment appointment) {
 };
 
 void AppointmentManager::displayAppointments() const {
-    cout << this->appointments.size() << endl;
     cout << "----- Appointments -----" << endl;
 
     for (int i = 0; i < this->appointments.size(); i++) {
         Appointment app = this->appointments[i];
         cout << "Appointment " << (i + 1) << ": " << endl;
-        // cout << "Date: " << app.getDate().getDay() << endl;
         cout << "Date: " << app.getDate().getYear() << "/" << app.getDate().getMonth() << "/" << app.getDate().getDay() << endl;
         cout << "Time: " << app.getTime().getStartTime() << " - " << app.getTime().getEndTime() << endl;
         cout << "Location: " << app.getLocation().getName() << " - " << app.getLocation().getAddress() << endl;
@@ -37,8 +35,7 @@ void AppointmentManager::deleteAppointment(Appointment appointment) {
     cout << "Not implemented yet" << endl;
     /**
      * TODO:
-     * - iterate through all the apointments
-     * and find a matching one and delete it from the list.
+     * - iterate through all the apointments and find a matching one and delete it from the list.
      */
 }
 
@@ -46,8 +43,8 @@ void AppointmentManager::editAppointment(Appointment appointment) {
     cout << "Not implemented yet" << endl;
     /**
      * TODO:
-     * To implement this function, I will need to find a matching appointment by looping all the appointments. 
-     * I might need an unique ID for each appointment so that I can find by the ID (future implementation)
+     * Find a matching appointment by looping all the appointments. 
+     * Might need an unique ID for each appointment so that I can find by the ID (future implementation)
      */
 }
 

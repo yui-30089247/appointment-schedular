@@ -12,13 +12,11 @@ using namespace std;
 
 class Date {
     private:
-        // string date; // here, I set the date type to string (MM/DD/YY), but it might change after more planning
         int year;
         int month;
         int day;
     public:
         Date();
-        // Date(string d);
         Date(int y, int m, int d);
         int getYear() const;
         int getMonth() const;
@@ -26,7 +24,6 @@ class Date {
         void setYear(int y);
         void setMonth(int m);
         void setDay(int d);
-        // void setDate(int y, int m, int d);
 };
 
 #endif
