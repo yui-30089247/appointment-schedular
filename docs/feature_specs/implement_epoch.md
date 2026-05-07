@@ -26,3 +26,9 @@ Date and Time classes will be combined into a single DateTime class
 - Normal: a user's datetime input will be stored as epoch time
 - Edge 1: empty input should be rejected  
 - Edge 2: past date should be rejected
+
+## Design decisions
+AI suggested two approaches: 
+1. Direct integration with epoch conversion (manual handling)
+2. Use <chrono> library for epoch handling
+I chose Approach 2 because <chorono> library provides built-in utilities for handling epoch time, reducing the need for manual calculations. 
