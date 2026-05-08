@@ -22,8 +22,7 @@ void AppointmentManager::displayAppointments() const {
     for (int i = 0; i < this->appointments.size(); i++) {
         Appointment app = this->appointments[i];
         cout << "Appointment " << (i + 1) << ": " << endl;
-        cout << "Date: " << app.getDate().getYear() << "/" << app.getDate().getMonth() << "/" << app.getDate().getDay() << endl;
-        cout << "Time: " << app.getTime().getStartTime() << " - " << app.getTime().getEndTime() << endl;
+        cout << "Date and Time: " << app.getDateTime().toString() << endl;
         cout << "Location: " << app.getLocation().getName() << " - " << app.getLocation().getAddress() << endl;
         cout << "Memo: " << app.getMemo().getDesciption();
         cout << "--------------------" << endl;
