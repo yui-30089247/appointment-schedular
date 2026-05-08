@@ -54,8 +54,35 @@ void test_add_appointment_invalid_date() {
     }
 }
 
+void test_convert_epoch_normal() {
+    DateTime dateTime = DateTime("2025-01-01 19:00");
+    assert(dateTime.toEpoch() == 1735786800);
+    cout << "Passed" << endl;
+}
+
+void test_empty_datetime_input() {
+    try {
+        DateTime emptyDateTime = DateTime("");
+        Appointment appointment;
+        appointment.setDateTime(emptyDateTime);
+    } catch (const invalid_argument& e) {
+        assert(string(e.what()) == "Invalid datetime format");
+        cout << "Passed" << endl;
+    }
+}
+
+void test_past_date_input() {
+    DateTime pastDateTime = DateTime("2024-01-01 10:00");
+    // ensure the isFuture method returns false
+    assert(!pastDateTime.isFuture()); 
+    cout << "Passed" << endl;
+}
+
 int main() {
     test_appointment_initialization();
     test_add_appointment();
     test_add_appointment_invalid_date();
+    test_convert_epoch_normal();
+    test_empty_datetime_input();
+    test_past_date_input();
 }
