@@ -10,7 +10,8 @@ Time
 Date and Time classes will be combined into a single DateTime class
 
 ## Public interface
-
+- DateTime class
+- Methods to help convert from datetime object to epoch time
 
 ## Inputs and outputs
 - Input: appointment date and time (start and end) => YYYY-MM-DD HH:MM
