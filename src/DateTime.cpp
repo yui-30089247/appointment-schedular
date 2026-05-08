@@ -6,6 +6,8 @@
 using namespace std;
 using namespace chrono;
 
+DateTime::DateTime() = default;
+
 // constructor: takes a string (YYYY-MM-DD HH:MM) and convert it to time_point
 DateTime::DateTime(const string& dateTimeStr) {
     dateTime = parseDateTime(dateTimeStr);

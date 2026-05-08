@@ -5,6 +5,8 @@
 
 using namespace std;
 
+Appointment::Appointment() : title(""), dateTime(DateTime()), location(Location()), memo(Memo()) {}
+
 Appointment::Appointment(std::string title, DateTime dateTime, Location location, Memo memo)
     : title(title), dateTime(dateTime), location(location), memo(memo) {}
 

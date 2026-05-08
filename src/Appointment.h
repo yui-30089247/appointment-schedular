@@ -20,6 +20,7 @@ class Appointment {
         Memo memo;
 
     public:
+        Appointment();
         Appointment(string title, DateTime datetime, Location location, Memo memo);
         string getTitle() const;
         DateTime getDateTime() const;

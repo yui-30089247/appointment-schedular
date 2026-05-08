@@ -12,6 +12,7 @@ class DateTime {
         system_clock::time_point dateTime; // represent a point in time, time_point is a data type
     
     public:
+        DateTime();
         // takes a string (YYYY-MM-DD HH:MM) and convert it to time_point
         DateTime(const string& dateTimeStr);
         static system_clock::time_point parseDateTime(const string& dateTimeStr);
