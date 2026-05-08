@@ -10,8 +10,7 @@ enable_testing()
 # Create library from your class implementations
 # (uncomment and add files as you create them)
 add_library(appointment_logic
-    src/Date.cpp
-    src/Time.cpp
+    src/DateTime.cpp
     src/Location.cpp
     src/Memo.cpp
     src/Appointment.cpp

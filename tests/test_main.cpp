@@ -49,7 +49,7 @@ void test_add_appointment_invalid_date() {
         Appointment appointment;
         appointment.setDateTime(invalidDate);
     } catch (const invalid_argument& e) {
-        assert(string(e.what()) == "Invalid month");
+        assert(string(e.what()) == "Invalid datetime format");
         cout << "Passed" << endl;
     }
 }

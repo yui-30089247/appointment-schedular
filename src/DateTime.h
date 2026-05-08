@@ -1,3 +1,6 @@
+#ifndef DATETIME_H
+#define DATETIME_H
+
 #include <chrono>
 #include <string>
 #include <stdexcept>
@@ -30,3 +33,5 @@ class DateTime {
         // converts the time_point back to a formatted string
         string toString() const;
 };
+
+#endif
